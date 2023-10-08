@@ -15,7 +15,7 @@
 }
 
 .sectionImages {
-  @apply m-lg:mb-8 m-lg:mx-auto;
+  @apply mb-8 mx-auto;
 
   img {
     @apply object-cover rounded-lg shadow-lg m-lg:max-h-72;
