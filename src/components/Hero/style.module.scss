@@ -1,0 +1,25 @@
+.hero {
+  @apply flex flex-col items-center justify-center relative text-white h-screen bg-center bg-cover bg-no-repeat;
+  h1 {
+    @apply font-extrabold text-3xl lg:text-5xl mb-2;
+  }
+  p {
+    @apply text-lg lg:text-2xl;
+  }
+  .scroll {
+    @apply absolute bottom-5 -translate-x-1/2 left-1/2 w-7 h-12 border-2 border-white;
+    border-radius: 3rem;
+    &::before {
+      content: "";
+      @apply absolute top-1 w-1 h-2 rounded-full bg-white -translate-x-1/2 left-1/2 opacity-100;
+      animation: wheel 2s infinite;
+    }
+  }
+
+  @keyframes wheel {
+    to {
+      opacity: 0;
+      top: 80%;
+    }
+  }
+}

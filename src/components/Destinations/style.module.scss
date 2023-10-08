@@ -1,0 +1,49 @@
+.section {
+  @apply py-10;
+
+  h3 {
+    @apply flex items-center;
+  }
+
+  svg {
+    @apply text-3xl mr-2;
+  }
+
+  p {
+    @apply lg:max-w-lg;
+  }
+}
+
+.sectionImages {
+  @apply m-lg:mb-8 m-lg:mx-auto;
+
+  img {
+    @apply object-cover rounded-lg shadow-lg m-lg:max-h-72;
+  }
+
+  &.masonry {
+    @apply flex m-lg:flex-wrap space-x-2;
+
+    img {
+      @apply lg:relative lg:-top-5 w-1/3 lg:w-3/5 rounded-lg shadow-lg;
+
+      &:first-child {
+        @apply lg:top-5 grow w-1/3 lg:w-2/5 border-red-400;
+      }
+    }
+  }
+  &.triple {
+    @apply grid gap-2;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 8rem);
+
+    img {
+      @apply w-full h-full m-auto;
+    }
+
+    img:first-child {
+      grid-column: 2 / 2;
+      grid-row: 1 / span 2;
+    }
+  }
+}
