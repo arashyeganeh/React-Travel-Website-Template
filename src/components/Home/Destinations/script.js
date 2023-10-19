@@ -38,7 +38,7 @@ const Destinations = () => {
       <section className={style.section}>
         <div className="container">
           <div className="flex flex-wrap lg:space-x-10">
-            <div className={`${style.sectionImages} md:w-2/5 mx-auto`}>
+            <div className={`${style.sectionImages} md:w-1/2 mx-auto`}>
               <img src={forestImg} alt="" />
             </div>
             <div className="lg:grow m-lg:order-2">
