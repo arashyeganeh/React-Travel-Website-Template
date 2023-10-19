@@ -1,4 +1,4 @@
-import image from "../../assets/img/home/header.jpg";
+import image from "../../../assets/img/home/header.jpg";
 import style from "./style.module.scss";
 
 const Hero = () => {

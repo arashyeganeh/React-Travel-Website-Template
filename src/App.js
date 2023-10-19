@@ -1,17 +1,23 @@
-import NavBar from "./components/Navbar/script";
-import Hero from "./components/Hero/script";
-import Destinations from "./components/Destinations/script";
-import Footer from "./components/Layout/Shared/Footer/script";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Notfound from "./pages/Notfound";
 import "./style/style.scss";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <Hero />
-      <Destinations />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<Notfound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import style from "./style.module.scss";
 
@@ -5,12 +6,20 @@ const Footer = () => {
   return (
     <footer className={style.footer}>
       <div className="container">
-        <h1>Travel</h1>
+        <h1>
+          <Link to="/">Travel</Link>
+        </h1>
         <div className="flex flex-wrap">
           <ul>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>About</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
             <li>Sign Up / Sign In</li>
           </ul>
           <ul>
@@ -29,15 +38,27 @@ const Footer = () => {
           </ul>
         </div>
         <div className={style.developer}>
-          <span>Develope by Arash Yeganeh</span>
+          <span>Developed by Arash Yeganeh</span>
           <div className="flex flex-row space-x-2">
             <button className={style.github}>
               <AiFillGithub />
-              <span>GitHub</span>
+              <a
+                href="https://github.com/arashyeganeh/React-Travel-Website-Template"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
             </button>
             <button className={style.linkedin}>
               <AiFillLinkedin />
-              <span>Linkedin</span>
+              <a
+                href="https://www.linkedin.com/in/arash-yeganeh/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Linkedin
+              </a>
             </button>
           </div>
         </div>

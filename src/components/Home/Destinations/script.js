@@ -1,12 +1,12 @@
 import { PiCactusDuotone, PiVolleyballDuotone } from "react-icons/pi";
 import { MdForest } from "react-icons/md";
 import style from "./style.module.scss";
-import deserCactustImg from "../../assets/img/home/desert-cactus.jpg";
-import desertSunImg from "../../assets/img/home/desert-sun.jpg";
-import forestImg from "../../assets/img/home/forest.jpg";
-import beachSeaImg from "../../assets/img/home/beach-sea.jpg";
-import beachSunriselImg from "../../assets/img/home/beach-sunrise.jpg";
-import beachPalmImg from "../../assets/img/home/beach-palm.jpg";
+import deserCactustImg from "../../../assets/img/home/desert-cactus.jpg";
+import desertSunImg from "../../../assets/img/home/desert-sun.jpg";
+import forestImg from "../../../assets/img/home/forest.jpg";
+import beachSeaImg from "../../../assets/img/home/beach-sea.jpg";
+import beachSunriselImg from "../../../assets/img/home/beach-sunrise.jpg";
+import beachPalmImg from "../../../assets/img/home/beach-palm.jpg";
 
 const Destinations = () => {
   return (
