@@ -1,7 +1,7 @@
 .hero {
   @apply flex flex-col items-center justify-center relative text-white h-screen bg-center bg-cover bg-no-repeat;
   h1 {
-    @apply font-extrabold text-3xl lg:text-5xl mb-2;
+    @apply text-inherit mb-2;
   }
   p {
     @apply text-lg lg:text-2xl;

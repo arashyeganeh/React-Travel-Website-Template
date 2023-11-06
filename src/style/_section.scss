@@ -1,0 +1,11 @@
+section {
+  @apply py-5;
+
+  h3 {
+    @apply flex items-center;
+
+    svg {
+      @apply text-3xl mr-2;
+    }
+  }
+}

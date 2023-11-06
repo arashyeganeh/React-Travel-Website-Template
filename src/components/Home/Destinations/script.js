@@ -12,7 +12,7 @@ const Destinations = () => {
   return (
     <article>
       <h2 className="text-center mt-10">Which destination do you like</h2>
-      <section className={style.section}>
+      <section>
         <div className="container">
           <div className="flex flex-wrap">
             <div className="lg:w-3/5 m-lg:order-2">
@@ -35,7 +35,7 @@ const Destinations = () => {
           </div>
         </div>
       </section>
-      <section className={style.section}>
+      <section>
         <div className="container">
           <div className="flex flex-wrap lg:space-x-10">
             <div className={`${style.sectionImages} md:w-1/2 mx-auto`}>
@@ -57,7 +57,7 @@ const Destinations = () => {
           </div>
         </div>
       </section>
-      <section className={style.section}>
+      <section>
         <div className="container">
           <div className="flex flex-wrap">
             <div className="lg:w-3/5 m-lg:order-2">
