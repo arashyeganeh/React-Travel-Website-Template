@@ -22,11 +22,7 @@ const Map = () => {
           className={style.map}
         >
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-          <Marker position={LOCATION} icon={markerIcon}>
-            <Popup>
-              A pretty CSS3 popup. <br /> Easily customizable.
-            </Popup>
-          </Marker>
+          <Marker position={LOCATION} icon={markerIcon}></Marker>
         </MapContainer>
       </div>
     </>
