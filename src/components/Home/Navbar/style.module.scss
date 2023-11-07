@@ -2,7 +2,7 @@
   width: stretch;
   @apply absolute top-6 flex justify-between items-center bg-white rounded shadow-xl mx-10 p-3 z-10;
   h1 {
-    @apply text-2xl font-extrabold;
+    @apply text-2xl font-extrabold m-0;
   }
 
   ul {
